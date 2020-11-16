@@ -1,0 +1,9 @@
+<app-header titulo="checkbox"></app-header>
+<ion-content>
+<ion-list>
+  <ion-item (click)="onClick(d)" *ngFor ="let d of data">
+    <ion-label>{{ d.name }}</ion-label>
+    <ion-checkbox [(ngModel)]="d.selected" color="{{d.name}}"></ion-checkbox>
+  </ion-item>
+</ion-list>
+</ion-content>
